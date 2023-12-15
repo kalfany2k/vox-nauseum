@@ -15,6 +15,11 @@ export default {
         lg: '0 8px 16px var(--tw-shadow-color)',
       },
     },
+    fontFamily: {
+      'Inter-md': 'Inter-md',
+      'Inter-li': 'Inter-li',
+      'Inter-xli': 'Inter-xli'
+    }
   },
   plugins: [
     plugin(function ({ matchUtilities, theme }) {

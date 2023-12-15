@@ -1,9 +1,4 @@
-import {
-  DragEventHandler,
-  MouseEventHandler,
-  useEffect,
-  useState,
-} from "react";
+import { useEffect, useState } from "react";
 
 interface Props {
   frames: string;
