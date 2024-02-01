@@ -16,10 +16,16 @@ export default {
       },
     },
     fontFamily: {
+      'Inter-bold': 'Inter-bold',
       'Inter-md': 'Inter-md',
       'Inter-li': 'Inter-li',
-      'Inter-xli': 'Inter-xli'
-    }
+      'Inter-xli': 'Inter-xli',
+      'SpaceMono-bold': 'SpaceMono-bold, Inter',
+      'SpaceMono-regular': 'SpaceMono-regular, Inter'
+    },
+    boxShadow: {
+      'glass-shadow': '0 4px 30px rgba(0, 0, 0, 0.1)',
+    },
   },
   plugins: [
     plugin(function ({ matchUtilities, theme }) {
