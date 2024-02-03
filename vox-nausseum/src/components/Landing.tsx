@@ -18,7 +18,7 @@ function Landing({ currentPage }: Props) {
           <Header />
         </div>
         {/* Divider bar */}
-        <div className="h-[6px] w-[95%] self-center rounded-md bg-slate-400 drop-shadow-xl"></div>
+        <div className="h-1 w-full self-center rounded-md bg-white/40 drop-shadow-xl"></div>
         {currentPage}
       </div>
       {!isFirefox && <GradientBackground />}

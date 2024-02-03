@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import $ from "jquery";
 import random from "random";
+import "../styles/card.scss";
 
 const Card = () => {
   const [position, setPosition] = useState([0, 0]);

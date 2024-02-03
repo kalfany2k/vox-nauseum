@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import "../styles/gradient.scss";
 
 const GradientBackground = () => {
   var tgX = 0;

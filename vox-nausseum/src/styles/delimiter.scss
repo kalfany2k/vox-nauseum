@@ -1,0 +1,70 @@
+.delimiter-front, .delimiter-back{
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-repeat: repeat;
+    height: 3rem;
+    background-size: 70%;
+    background-position: 20% 40%;
+    @media screen and (min-width: 600px) {
+      background-size: 50%;
+    }
+    
+    @media screen and (min-width: 768) {
+      background-size: 25%;
+    }
+
+    @media screen and (min-width: 1024px) { 
+      height: 4rem;
+    }
+
+    @media screen and (min-width: 1440px) {
+      background-size: 25%;
+    }
+  }
+
+  .delimiter-back {
+    background-image: url('/home/kalfany/V_O_X/vox-nausseum/src/assets/pictures/DelimiterJapaneseText.png');
+    top:0;
+    transform: rotate(-4deg);
+    position: absolute;
+
+    @media screen and (min-width: 600px) {
+      transform: rotate(-3deg);
+    }
+
+    @media screen and (min-width: 1024px) {
+      background-position: 15% 35%;
+    }
+
+    @media screen and (min-width: 1440px) {
+      background-position: 20% 40%;
+    }
+
+    z-index: 10;
+  }
+
+  .delimiter-front {
+    background-image: url('/home/kalfany/V_O_X/vox-nausseum/src/assets/pictures/DelimiterText.png');
+    top:0;
+    transform: rotate(3deg);
+
+    background-position: 30% 40%;
+
+    @media screen and (min-width: 600px) {
+      transform: rotate(3deg);
+    }
+
+    @media screen and (min-width: 768px) {
+      transform: rotate(2deg);
+    }
+
+    @media screen and (min-width: 1024px) {
+      background-position: 30% 35%;
+    }
+
+    @media screen and (min-width: 1440px) {
+      background-position: 40% 40%;
+    }
+
+    z-index: 20;
+  }

@@ -1,13 +1,19 @@
 import { Link } from "react-router-dom";
 import logo from "/home/kalfany/V_O_X/vox-nausseum/src/assets/pictures/VoxLogo.png";
+import "../styles/navigation.scss";
 
 const Header = () => {
   return (
     <div className="h-24 w-screen font-Inter-xli opacity-80 flex flex-row items-center justify-left lg:justify-between overflow-hidden">
-      <img
-        src={logo}
-        className="w-[80%] md:w-[40%] xl:w-[20%] justify-self-center h-full object-cover cursor-pointer mt-3"
-      />
+      <Link
+        to={"/"}
+        className="w-[80%] md:w-[40%] xl:w-[20%] h-full mt-[-12px]"
+      >
+        <img
+          src={logo}
+          className="justify-self-center w-full h-full object-cover cursor-pointer mt-3"
+        />
+      </Link>
       <div className="lg:w-[45%] lg:h-[30%] hidden xl:flex flex-row text-center text-xl font-Inter-bold text-shadow-lg items-center whitespace-nowrap">
         <div className="nav-buttons-container">
           <Link to="/">
