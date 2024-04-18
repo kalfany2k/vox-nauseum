@@ -26,7 +26,7 @@ function Landing({ currentPage }: Props) {
         className="h-1 absolute top-[6rem] w-full self-center bg-white/80 rounded-md drop-shadow-xl"
         style={{ backgroundColor: isFirefox ? "black" : "" }}
       ></div> */}
-      <div className="flex items-center justify-center">{currentPage}</div>
+      {currentPage}
       {isChrome ? <GradientBackground /> : <div className="bg-div" />}
     </div>
   );

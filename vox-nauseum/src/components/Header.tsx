@@ -4,8 +4,8 @@ import DisplacedText from "./DisplacedText";
 
 const Header = () => {
   return (
-    <div className="flex flex-col items-center">
-      <div className="w-[50%] mt-3 hidden xl:flex flex-row text-center text-xl font-Inter-md text-shadow-lg items-center whitespace-nowrap">
+    <div className="flex flex-col items-center font-Inter-md text-shadow-lg">
+      <div className="w-[50%] mt-3 hidden xl:flex flex-row text-center text-xl items-center whitespace-nowrap">
         <div className="nav-buttons-container">
           <Link to="/">
             <div className="nav-buttons-text">Home</div>
@@ -27,7 +27,11 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <DisplacedText />
+      <DisplacedText
+        text="VOX NAUSEUM"
+        smallSize="text-[3rem]"
+        largeSize="lg:text-[5rem]"
+      />
     </div>
   );
 };

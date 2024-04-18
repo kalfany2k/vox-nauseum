@@ -32,49 +32,56 @@
   font-family: 'Inter-xli';
   font-style: normal;
   font-weight: 200;
-  src: url('./assets/fonts/Inter-ExtraLight.woff2') format('woff2'),
+  src: url('./assets/fonts/Inter-ExtraLight.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Inter-li';
   font-style: normal;
   font-weight: 300;
-  src: url('./assets/fonts/Inter-Light.woff2') format('woff2'),
+  src: url('./assets/fonts/Inter-Light.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url('./assets/fonts/Inter-Black.woff2') format('woff2'),
+  src: url('./assets/fonts/Inter-Black.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Inter-md';
   font-style: normal;
   font-weight: 500;
-  src: url('./assets/fonts/Inter-Medium.woff2') format('woff2'),
+  src: url('./assets/fonts/Inter-Medium.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Inter-bold';
   font-style: normal;
   font-weight: 700;
-  src: url('./assets/fonts/Inter-Bold.woff2') format('woff2'),
+  src: url('./assets/fonts/Inter-Bold.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'SpaceMono-bold';
   font-style: normal;
   font-weight: 700;
-  src: url('./assets/fonts/SpaceMono-Bold.woff2') format('woff2'),
+  src: url('./assets/fonts/SpaceMono-Bold.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'SpaceMono-regular';
   font-style: normal;
   font-weight: 300;
-  src: url('./assets/fonts/SpaceMono-Regular.woff2') format('woff2'),
+  src: url('./assets/fonts/SpaceMono-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Arial-rounded-mt-bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/Arial-Rounded-MT-Bold.woff2') format('woff2');
 }
 
 body {

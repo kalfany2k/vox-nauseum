@@ -21,7 +21,8 @@ export default {
       'Inter-li': 'Inter-li',
       'Inter-xli': 'Inter-xli',
       'SpaceMono-bold': 'SpaceMono-bold, Inter',
-      'SpaceMono-regular': 'SpaceMono-regular, Inter'
+      'SpaceMono-regular': 'SpaceMono-regular, Inter',
+      'Arial-rounded-mt-bold': 'Arial-rounded-mt-bold, Inter',
     },
     boxShadow: {
       'glass-shadow': '0 4px 30px rgba(0, 0, 0, 0.1)',

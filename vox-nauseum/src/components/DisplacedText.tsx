@@ -2,7 +2,21 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { isChrome, isMobile } from "react-device-detect";
 
-const DisplacedText = () => {
+interface Props {
+  turbulence?: string;
+  text: string;
+  color?: string;
+  smallSize: string;
+  largeSize: string;
+}
+
+const DisplacedText = ({
+  turbulence = "",
+  text,
+  color = "",
+  smallSize,
+  largeSize,
+}: Props) => {
   const [seed, setSeed] = useState("2");
 
   // set seed to at most 69
@@ -46,7 +60,7 @@ const DisplacedText = () => {
           <feDisplacementMap
             in="SourceGraphic"
             in2="colormatrix1"
-            scale={isMobile ? "2" : "7"}
+            scale={turbulence != "" ? turbulence : isMobile ? "2" : "7"}
             xChannelSelector="R"
             yChannelSelector="A"
             result="displacementMap"
@@ -55,11 +69,13 @@ const DisplacedText = () => {
       </svg>
 
       <div
-        className="displaced-text text-center font-Inter-md text-[42px] md:text-[64px] lg:text-[80px] mt-4 sm:mt-0"
-        style={{ color: !isChrome ? "darkred" : "yellow" }}
+        className={`displaced-text text-center ${smallSize} ${largeSize} mt-4 sm:mt-0`}
+        style={{
+          color: color != "" ? color : !isChrome ? "darkred" : "yellow",
+        }}
       >
-        <Link to="/">
-          <p>VOX NAUSEUM</p>
+        <Link to={text === "VOX NAUSEUM" ? "/" : "/pieces/submit"}>
+          <p>{text}</p>
         </Link>
       </div>
     </div>
