@@ -1,0 +1,32 @@
+.nav-buttons-container {
+    flex: 1;
+  }
+
+  .nav-buttons-text:hover {
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+
+  .displaced-text {
+    filter: url(#turbulent-filter);
+    white-space: nowrap;
+    outline: none;
+    font-size: 6rem;
+  }
+
+  .nav-buttons-text {
+    display: inline-block;
+    transition: all;
+    transition-duration: 300ms;
+    padding: 0.75rem;
+    border-radius: 16px;
+    width: 75%;
+    height: auto;
+  }
+
+  #header-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  

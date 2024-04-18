@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg1: rgb(217, 141, 255);
+  --color-bg2: rgb(0, 17, 82);
+  --color1: 18, 113, 255;
+  --color2: 221, 74, 255;
+  --color3: 100, 220, 255;
+  --color4: 255,20,147;
+  --color5: 180, 180, 50;
+  --color6: 255, 182, 193;
+  --color-interactive: 140, 100, 255;
+  --circle-size: 80%;
+  --blending: hard-light;
+  --holo-color1:#efb2fb;
+  --holo-color2: #acc6f8;
+}
+
+@layer components {
+  .event-card {
+    backdrop-filter: blur(18px) saturate(174%);
+    -webkit-backdrop-filter: blur(18px) saturate(174%);
+    background-color: rgba(4, 0, 56, 0.35);
+    border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+}
+
+@font-face {
+  font-family: 'Inter-xli';
+  font-style: normal;
+  font-weight: 200;
+  src: url('./assets/fonts/Inter-ExtraLight.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'Inter-li';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./assets/fonts/Inter-Light.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/Inter-Black.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'Inter-md';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/Inter-Medium.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'Inter-bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/Inter-Bold.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'SpaceMono-bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/SpaceMono-Bold.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'SpaceMono-regular';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./assets/fonts/SpaceMono-Regular.woff2') format('woff2'),
+}
+
+body {
+  font-family: 'Inter-li';
+  color: #000000;
+  /* @apply 
+    bg-purple-400/10 */
+  margin: 0;
+  padding: 0;
+}
