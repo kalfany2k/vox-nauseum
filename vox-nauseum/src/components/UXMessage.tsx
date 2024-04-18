@@ -3,7 +3,6 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const UXMessage = () => {
   const [opacity, setOpacity] = useState(0);
-  const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
     if (localStorage.getItem("firstEnter") != "no") {
@@ -15,11 +14,11 @@ const UXMessage = () => {
   }, []);
 
   const closePopup = () => {
-    setOpacity(0);
+    setOpacity(0.0001);
 
     setTimeout(() => {
       localStorage.setItem("firstEnter", "no");
-      setHidden(true);
+      setOpacity(0);
     }, 500);
   };
 
