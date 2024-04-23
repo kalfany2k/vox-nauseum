@@ -1,5 +1,5 @@
 from database import Base
-from sqlalchemy import Column, Integer, String, Boolean, Float, Date, JSON
+from sqlalchemy import Column, Integer, String, Boolean, Float, Date, JSON, ForeignKey
 
 class Pieces(Base):
     __tablename__ = 'pieces'
@@ -11,3 +11,8 @@ class Pieces(Base):
     file_url = Column(String)
     date_posted = Column(String)
 
+class Pictures(Base):
+    __tablename__ = 'picutes'
+    id = Column(Integer, ForeignKey("pieces.id"))
+    rank = Column(Integer)
+    url = Column(String)

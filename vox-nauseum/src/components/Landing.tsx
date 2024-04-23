@@ -12,7 +12,7 @@ interface Props {
 function Landing({ currentPage }: Props) {
   return (
     <div
-      className="flex flex-col w-screen h-[200vh] md:h-screen overflow-y-scroll lg:overflow-y-hidden "
+      className="flex flex-col w-screen h-[200vh] md:h-screen overflow-x-hidden overflow-y-scroll "
       style={{
         color: !isChrome ? "black" : "white",
       }}

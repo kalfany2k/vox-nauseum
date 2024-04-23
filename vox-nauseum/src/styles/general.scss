@@ -25,3 +25,20 @@
     background: linear-gradient(to bottom, #ece4d9 0%,#e9dfd1 100%);
     padding: 0px 15px
 }
+
+.item {
+    width:90%;
+    height:70%;
+    margin-bottom: 1rem;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    background-color: rgba(0, 0, 0, 0.39);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (min-width: 1440px) {
+        width: 49%;
+        height: 51%;
+    }
+  }

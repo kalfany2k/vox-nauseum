@@ -6,17 +6,10 @@ interface Props {
   turbulence?: string;
   text: string;
   color?: string;
-  smallSize: string;
-  largeSize: string;
+  size: string;
 }
 
-const DisplacedText = ({
-  turbulence = "",
-  text,
-  color = "",
-  smallSize,
-  largeSize,
-}: Props) => {
+const DisplacedText = ({ turbulence = "", text, color = "", size }: Props) => {
   const [seed, setSeed] = useState("2");
 
   // set seed to at most 69
@@ -26,7 +19,7 @@ const DisplacedText = ({
 
   return (
     <div className="">
-      <svg id="header-svg">
+      <svg id="header-svg" className="pointer-events-none">
         <filter id="turbulent-filter">
           <feTurbulence
             type="turbulence"
@@ -69,7 +62,7 @@ const DisplacedText = ({
       </svg>
 
       <div
-        className={`displaced-text text-center ${smallSize} ${largeSize} mt-4 sm:mt-0`}
+        className={`displaced-text text-center ${size} mt-6 sm:mt-0`}
         style={{
           color: color != "" ? color : !isChrome ? "darkred" : "yellow",
         }}

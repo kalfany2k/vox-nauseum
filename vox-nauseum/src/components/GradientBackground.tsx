@@ -19,12 +19,10 @@ const GradientBackground = () => {
           curX
         )}px, ${Math.round(curY)}px)`;
       }
-      console.log(curX, curY);
       requestAnimationFrame(() => move());
     }
 
     window.addEventListener("mousemove", (event) => {
-      console.log(tgX, tgY);
       tgX = event.clientX;
       tgY = event.clientY;
     });
